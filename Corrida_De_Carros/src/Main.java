@@ -19,6 +19,12 @@ public class Main {
 			e.printStackTrace();
 		}
 		System.out.println("Fim de Corrida");
+		
+		if(t1.a>t2.b) {
+			System.out.println("Carro B ganhou a corrida!");
+		} else {
+			System.out.println("Carro A ganhou a corrida!");
+		}
 	}
 
 }

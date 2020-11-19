@@ -1,5 +1,6 @@
 
 public class CarroB extends Thread{
+	public long b;
 	@Override
 	public void run() {
 		for(int x = 0; x < 15; x++) {
@@ -8,7 +9,7 @@ public class CarroB extends Thread{
 			Thread.yield();
 			try {
 				Thread.sleep((long) (2000*Math.random()));
-				System.out.println("Carro B Chegou!");
+				b = System.currentTimeMillis();
 			}catch(InterruptedException e) {
 				e.printStackTrace();
 			}
