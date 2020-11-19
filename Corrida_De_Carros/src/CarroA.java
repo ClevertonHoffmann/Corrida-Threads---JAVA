@@ -1,9 +1,9 @@
 
-public class Carro1 extends Thread{
+public class CarroA extends Thread{
 	@Override
 	public void run() {
-		for(int x = 0; x < 10; x++) {
-			System.out.println("\n      x-x   \n      |1|   \n      x-x  \n      \\ /");
+		for(int x = 0; x < 15; x++) {
+			System.out.println(" x-x   \n |A|   \n x-x  \n \\ /");
 			Thread.currentThread();
 			Thread.yield();
 			try {

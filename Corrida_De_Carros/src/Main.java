@@ -5,10 +5,11 @@ public class Main {
 
 	public static void main(String[] args) throws InterruptedException {
 		System.out.println("Largada Corrida ");
-		System.out.println(" C2    C1 ");
+		System.out.println(" cA    cB ");
 		Thread.sleep(1000);
-		Carro1 t1 = new Carro1();
-		Carro2 t2 = new Carro2();
+		String a = "";
+		CarroA t1 = new CarroA();
+		CarroB t2 = new CarroB();
 		t1.start();
 		t2.start();
 		try {
